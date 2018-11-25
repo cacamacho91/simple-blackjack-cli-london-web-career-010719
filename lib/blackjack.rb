@@ -28,9 +28,16 @@ def initial_round
   return card_total
 end
 
-def hit?(num)
+def hit?(current_score)
   prompt_user
-  get_user_input
+  if get_user_input == "h"
+    return current_score + deal_card
+  elsif get_user_input == "s"
+    return current_score
+  else
+    puts "please pick a valid option"
+    hit
+  end
 end
 
 def invalid_command
