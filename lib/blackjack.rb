@@ -55,6 +55,10 @@ end
 def runner
   welcome
   current_score = initial_round
-  hit?(current_score)
+
+  until current_score > 21
+    hit?(current_score)
+  end
+  end_game
 
 end
