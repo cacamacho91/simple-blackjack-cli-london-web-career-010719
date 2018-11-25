@@ -40,12 +40,11 @@ def hit?(current_score)
     invalid_command
     prompt_user
     return current_score
-  end 
-
+  end
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "Please enter a valid command"
 end
 
 #####################################################
