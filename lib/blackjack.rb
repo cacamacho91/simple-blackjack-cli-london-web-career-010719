@@ -35,7 +35,10 @@ def hit?(current_score)
   when "s"
     return current_score
   when "h"
-    return current_score + deal_card 
+    return current_score + deal_card
+  else
+    invalid_command
+    prompt_user 
 
 end
 
