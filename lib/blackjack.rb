@@ -53,5 +53,6 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  current_score = initial_round
 end
