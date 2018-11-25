@@ -25,6 +25,7 @@ def end_game(score)
 end
 
 def initial_round
+  binding.pry
   return deal_card + deal_card
   display_card_total
 end
