@@ -55,6 +55,6 @@ end
 def runner
   welcome
   current_score = initial_round
-  prompt_user
-  
+  hit?(current_score)
+
 end
