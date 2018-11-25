@@ -38,7 +38,9 @@ def hit?(current_score)
     return current_score + deal_card
   else
     invalid_command
-    prompt_user 
+    prompt_user
+    return current_score
+  end 
 
 end
 
