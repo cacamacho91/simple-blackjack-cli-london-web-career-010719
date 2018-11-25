@@ -30,14 +30,13 @@ end
 
 def hit?(current_score)
   prompt_user
-  if get_user_input == "h"
-    return current_score + deal_card
-  elsif get_user_input == "s"
+  user_input = get_user_input
+  case user_input
+  when "s"
     return current_score
-  else
-    puts "please pick a valid option"
-    hit
-  end
+  when "h"
+    return current_score + deal_card 
+
 end
 
 def invalid_command
