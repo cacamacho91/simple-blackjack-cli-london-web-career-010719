@@ -31,7 +31,7 @@ end
 def hit?(current_score)
   prompt_user
   user_input = get_user_input
-  
+
   case user_input
   when "s"
     return current_score
@@ -55,4 +55,6 @@ end
 def runner
   welcome
   current_score = initial_round
+  prompt_user
+  
 end
